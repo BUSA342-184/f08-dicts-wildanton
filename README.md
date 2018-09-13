@@ -15,7 +15,7 @@ Finally, your program should use dictonaries to count the following:
 
 NOTE:  The text discusses the `.get()` method for `dict` objects.  Using this simplification may help.
 
-Your program should print-out the `dict`s in the format of a `csv` (*c*omma *s*eparated *v*alues) in alphabetical order of the key separated by a brief header as follows:
+For each of the four `dict`s, your program should print-out a brief header followed the key and value pairs in the `dict` in the format of a `csv` (*c*omma *s*eparated *v*alues) in alphabetical order of the key as follows:
 ```
 --- FROM USER ---
 antranig,1
@@ -42,7 +42,7 @@ source,27
 collab.sakaiproject.org,27
 ```
 
-One way that you may accomplish this is by using the `csv.writerows()` method, after connecting the filehandle to the `STDOUT` as follows
+One way that you could accomplish this is by using the `csv.writerows()` method, after connecting the filehandle to the `STDOUT` as follows:
 ```
 # to access STDOUT
 import sys
@@ -56,10 +56,9 @@ cw = csv.writer(sys.stdout)
 
 # write an output header
 print('--- FROM USER ---')
-# assume that dict_fr_user is a dict() that contains usernames and counts
+# assume that dict_fr_user is a dict() whose key and value pairs are usernames and counts
 cw.writerows(sorted(dict_fr_user.items())
 ...
-
 
 ```
 
