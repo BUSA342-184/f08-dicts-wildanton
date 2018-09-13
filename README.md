@@ -2,7 +2,7 @@
 
 Write a Python program, `fromto.py` that reads through the [e-mail file from the text](http://www.py4e.com/code/mbox-short.txt), `mbox-short.txt`, finds all of the lines that start with `From:` and `To:,` processes the e-mail addresses, and prints output as described below.
 
-Your program should "grab" the e-mail address, which you may assume are the second word of the lines beginning with `From:` and `To:` (To accomplish this you may find it helpful to "convert" the line into a list).  You may also assume that there is only one e-mail address in the To: field.
+Your program should "grab" the e-mail address, which you may assume are the second word of the lines beginning with `From:` and `To:` (To accomplish this you may find it helpful to "convert" the lines that begin with `From:` and `To:` into a list).  You may also assume that there is only one e-mail address in the To: field.
 
 Your program should do the "second split:" separate the e-mail address into the username and the hostname (FQDN) hostname portion.
 
